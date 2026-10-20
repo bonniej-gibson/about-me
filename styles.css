@@ -1,10 +1,78 @@
 body {
+    padding-left: 125px;
+    padding-right:125px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 font-family: "Helvetica", sans-serif;
+background-color:#e5e5de
+}
+/* Navigation bar */
+.navbar {
+    background-color: #bdc1a3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Page title on the left */
+.site-title {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Navigation links on the right */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #fbfdfe;
+    text-decoration: underline;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+
+ .profile-photo {
+                display: block;
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+            margin: 25px auto 25px;
 }
 h2 {
-color: #7A0019;
+color: #000000;
 }
+
 #contact {
-background-color: #FFDE7A;
+background-color: #bdc1a3;
 padding: 2%;
 }
+
